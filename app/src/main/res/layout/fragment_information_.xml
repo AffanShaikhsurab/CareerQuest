@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Information_Fragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="false"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                tools:context=".activity.Information">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="224dp"
+                    android:layout_marginBottom="24dp"
+                    android:paddingLeft="20dp"
+                    android:text="What It Is ?"
+                    android:textColor="#101010"
+                    android:textSize="29sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.55"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/WIS_youtubePlayer_Information"
+                        android:layout_width="338dp"
+                        android:layout_height="wrap_content"
+                        app:autoPlay="false" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="337dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="84dp"
+                    android:paddingLeft="20dp"
+                    android:text="What do they do  ?"
+                    android:textColor="#101010"
+                    android:textSize="29sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.578"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/WDTD_youtubePlayer_Information"
+                        android:layout_width="338dp"
+                        android:layout_height="wrap_content"
+
+                        app:autoPlay="false" />
+                </LinearLayout>
+
+<!--                <Button-->
+<!--                    android:id="@+id/courses_button_Information"-->
+<!--                    android:layout_width="318dp"-->
+<!--                    android:layout_height="53dp"-->
+<!--                    android:layout_marginStart="46dp"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    android:layout_marginEnd="47dp"-->
+<!--                    android:background="#0C0C0C"-->
+<!--                    android:backgroundTint="#835D5D"-->
+<!--                    android:text="Courses"-->
+<!--                    android:visibility="invisible"-->
+<!--                    app:cornerRadius="100sp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.0"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/roadmap_button_Information" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="411dp"
+                    android:layout_marginBottom="572dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="gone">
+
+                    <Button
+                        android:id="@+id/roadmap_button_Information"
+                        android:layout_width="318dp"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="44dp"
+                        android:background="#0C0C0C"
+                        android:backgroundTint="#835D5D"
+                        android:elevation="10dp"
+                        android:scrollHorizontally="false"
+                        android:text="Roadmap"
+                        android:visibility="invisible"
+                        app:cornerRadius="299dp"
+                        tools:visibility="gone" />
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+</layout>

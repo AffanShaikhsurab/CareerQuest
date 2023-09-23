@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/degree_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="13dp"
+        android:transformPivotX="0dp"
+        android:transformPivotY="5dp"
+        tools:context=".activity.coursesInformation">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView1213"
+                        android:layout_width="300dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="224dp"
+                        android:paddingLeft="20dp"
+                        android:text="What It Is ?"
+                        android:textColor="#101010"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/_CoursesInformation"
+                        android:layout_width="326dp"
+                        android:layout_height="171dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="#00FFFFFF"
+                        app:layout_constraintBottom_toTopOf="@+id/cardview_ifo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/textView1213"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1213"
+                        app:layout_constraintVertical_bias="0.62">
+
+                        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                            android:id="@+id/collageVideoView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:autoPlay="false">
+
+
+                        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview_ifo"
+                        android:layout_width="311dp"
+                        android:layout_height="189dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardBackgroundColor="#DDEDF8"
+                        app:cardCornerRadius="18dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView421"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.61"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/layout_CoursesIfo"
+                            android:layout_width="381dp"
+                            android:layout_height="179dp"
+                            android:layout_marginBottom="31dp"
+                            android:background="#DDEDF8"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toTopOf="@+id/textView421"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/_CoursesInformation">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Information"
+                                android:textColor="#171717"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout4"
+                                android:layout_width="404dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="14dp"
+                                android:orientation="horizontal"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/_CoursesInformation">
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="87dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="0"
+                                    android:text="Jobs"
+                                    android:textAlignment="center"
+                                    android:textColor="#A8A8A8"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/totalNoOfJobs_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="120dp"
+                                    android:layout_weight="0"
+                                    android:text="100000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout5"
+                                android:layout_width="407dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_weight="0"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="93dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+                                    android:text="Years"
+                                    android:textAlignment="center"
+                                    android:textColor="#A8A8A8"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/totalNoOfYears_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="115dp"
+                                    android:layout_weight="0"
+                                    android:text="100000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="411dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="28dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="0"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="93dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+                                    android:text="Package"
+                                    android:textAlignment="center"
+                                    android:textColor="#A8A8A8"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/salary_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="100dp"
+                                    android:layout_weight="0"
+                                    android:text="100000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView421"
+                        android:layout_width="337dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="40dp"
+                        android:paddingLeft="20dp"
+                        android:text="What do they do  ?"
+                        android:textColor="#101010"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview_ifo" />
+
+                    <LinearLayout
+                        android:id="@+id/lAYOUT_CoursesInformation"
+                        android:layout_width="326dp"
+                        android:layout_height="172dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toTopOf="@id/textViewCiriculum"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView421">
+
+                        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                            android:id="@+id/WTDT_CoursesInformation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:autoPlay="false" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewCiriculum"
+                        android:layout_width="195dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Ciriculum"
+                        android:textColor="#101010"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lAYOUT_CoursesInformation"></TextView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="50dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recylerView_collageImages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textViewScholariship"
+                        android:layout_width="195dp"
+                        android:layout_height="47dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Scholarship"
+                        android:textColor="#101010"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recylerView_scholarshipList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0dp"
+                            android:paddingLeft="0dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewCollages"
+                        android:layout_width="172dp"
+                        android:layout_height="83dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="330dp"
+                        android:text="Collages"
+                        android:textColor="#101010"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewCollages">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recylerView_collageLists"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0dp"
+                            android:clickable="true"
+                            android:paddingLeft="5dp" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
