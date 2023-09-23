@@ -36,7 +36,14 @@ android {
 
 }
 
+
 dependencies {
+
+        implementation "io.ktor:ktor-client-core:2.3.4"
+        implementation "io.ktor:ktor-client-cio:2.3.4"
+    implementation "io.ktor:ktor-client-content-negotiation:2.3.4"
+    implementation "io.ktor:ktor-serialization-kotlinx-json:2.3.4"
+    implementation "io.ktor:ktor-client-apache:1.6.0" // Replace with the latest version
 
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
@@ -48,11 +55,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.0.4'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+
+
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
 
     implementation platform('com.google.firebase:firebase-bom:29.3.1')
-
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.9'
 
 
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'

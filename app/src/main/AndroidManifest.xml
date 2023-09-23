@@ -12,11 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+
+            android:name=".activity.ChatBot"
+            android:exported="true">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
             android:name=".activity.collage_Information"
             android:exported="false"
             android:label="@string/title_activity_collage_information"
-            android:theme="@style/Theme.MyApplication" />
-        <!-- <activity -->
+            android:theme="@style/Theme.MyApplication" /> <!-- <activity -->
         <!-- android:name="act" -->
         <!-- android:exported="false" /> -->
         <activity
@@ -31,11 +41,7 @@
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
