@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1: What interests you most?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/choicesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/choiceARadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a) Science and helping people (Healthcare and Medicine)" />
+
+        <RadioButton
+            android:id="@+id/choiceBRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b) Managing finances and investments (Business and Finance)" />
+
+        <RadioButton
+            android:id="@+id/choiceCRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c) Teaching and mentoring (Education)" />
+
+        <RadioButton
+            android:id="@+id/choiceDRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d) Designing and building things (Engineering)" />
+    </RadioGroup>
+
+    <!-- Add similar sections for other questions -->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

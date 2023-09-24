@@ -1,5 +1,6 @@
 package com.affanshaikhsurab.myapplication.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.affanshaikhsurab.myapplication.adapter.Careers
 import android.os.Bundle
@@ -13,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         //creating a fragment
         val f = Fragment()
         val fragmentTransaction = supportFragmentManager.beginTransaction()

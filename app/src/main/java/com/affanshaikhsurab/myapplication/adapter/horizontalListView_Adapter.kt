@@ -42,16 +42,15 @@ class horizontalListView_Adapter (var name:String ,var type :String  ,var list :
 
 
         holder.itemView.imageView_HorizontalList.setOnClickListener{
-            run{
-                    if(type=="Collages"){
+                    if(type=="Colleges"){
                         var intent :Intent = Intent(context,collage_Information::class.java)
-                        intent.putExtra("Label" , name+"/Collages/"+list[position].name)
+                        intent.putExtra("Label" , name+"/Colleges/"+list[position].name)
                         intent.putExtra("Name",list[position].name)
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                         context.startActivity(intent)
                     }
-                }
+
         }
     }
 

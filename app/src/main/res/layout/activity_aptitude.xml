@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apptitude Test"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. What interests you most?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question1RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question1ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Science and helping people " />
+
+            <RadioButton
+                android:id="@+id/question1ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Managing finances and investments " />
+
+            <RadioButton
+                android:id="@+id/question1ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Teaching and mentoring " />
+
+            <RadioButton
+                android:id="@+id/question1ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Designing and building things " />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Which activity do you enjoy the most?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question2RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question2ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Performing or creating art " />
+
+            <RadioButton
+                android:id="@+id/question2ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Analyzing legal cases and justice systems " />
+
+            <RadioButton
+                android:id="@+id/question2ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Persuading and selling products/services " />
+
+            <RadioButton
+                android:id="@+id/question2ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Providing hospitality and travel experiences " />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. What's your preferred work environment?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question3RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question3ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Outdoors, working with plants and animals " />
+
+            <RadioButton
+                android:id="@+id/question3ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) In an office, managing government policies " />
+
+            <RadioButton
+                android:id="@+id/question3ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Launching and growing your own business " />
+
+            <RadioButton
+                android:id="@+id/question3ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Working with media and communication tools " />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. What best describes your problem-solving style?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question4RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question4ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Analyzing and optimizing processes " />
+
+            <RadioButton
+                android:id="@+id/question4ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Responding to emergencies and enforcing laws " />
+
+            <RadioButton
+                android:id="@+id/question4ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Diagnosing and treating medical conditions " />
+
+            <RadioButton
+                android:id="@+id/question4ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Developing new technologies and solutions " />
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Which area do you find most engaging?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question5RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question5ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Crafting and performing arts " />
+
+            <RadioButton
+                android:id="@+id/question5ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Legal research and court proceedings " />
+
+            <RadioButton
+                android:id="@+id/question5ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Managing financial portfolios " />
+
+            <RadioButton
+                android:id="@+id/question5ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Promoting and selling products " />
+        </RadioGroup>
+        <!-- Question 6 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. What's your primary interest in the workforce?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question6RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question6ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Serving the public and upholding laws " />
+
+            <RadioButton
+                android:id="@+id/question6ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Innovating and creating new products " />
+
+            <RadioButton
+                android:id="@+id/question6ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Communicating and storytelling " />
+
+            <RadioButton
+                android:id="@+id/question6ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Designing and constructing structures " />
+        </RadioGroup>
+
+        <!-- Question 7 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Where would you prefer to work?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question7RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question7ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) In a hospital or healthcare facility " />
+
+            <RadioButton
+                android:id="@+id/question7ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) On a farm or in agriculture-related settings " />
+
+            <RadioButton
+                android:id="@+id/question7ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) In a courtroom or legal office " />
+
+            <RadioButton
+                android:id="@+id/question7ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) In a hotel or tourist destination " />
+        </RadioGroup>
+
+        <!-- Question 8 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. What do you enjoy learning about the most?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question8RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question8ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Economic trends and financial markets " />
+
+            <RadioButton
+                android:id="@+id/question8ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Environmental sustainability and food production " />
+
+            <RadioButton
+                android:id="@+id/question8ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Creative arts and entertainment industries " />
+
+            <RadioButton
+                android:id="@+id/question8ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Technological advancements and innovations " />
+        </RadioGroup>
+
+        <!-- Question 9 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. Which skill do you feel you excel at?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question9RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question9ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Negotiating and persuading " />
+
+            <RadioButton
+                android:id="@+id/question9ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Providing healthcare and medical care " />
+
+            <RadioButton
+                android:id="@+id/question9ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Enforcing laws and maintaining order " />
+
+            <RadioButton
+                android:id="@+id/question9ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Designing and constructing mechanical systems " />
+        </RadioGroup>
+
+        <!-- Question 10 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. What values resonate with you most?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question10RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question10ChoiceA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a) Public service and community welfare " />
+
+            <RadioButton
+                android:id="@+id/question10ChoiceB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Manufacturing and producing physical goods " />
+
+            <RadioButton
+                android:id="@+id/question10ChoiceC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Entrepreneurship and business growth " />
+
+            <RadioButton
+                android:id="@+id/question10ChoiceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d) Effective communication and media influence " />
+        </RadioGroup>
+        <!-- You can continue to add more questions here -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitButton" />
+
+    </LinearLayout>
+</ScrollView>

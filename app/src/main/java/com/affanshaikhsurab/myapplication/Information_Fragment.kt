@@ -2,6 +2,7 @@ package com.affanshaikhsurab.myapplication
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
@@ -72,13 +73,14 @@ class Information_Fragment : Fragment() {
 //            startActivity(intent)
 //        }
     }
-    fun fetchingImages( name :String) {
+    fun fetchingImages( name :String ) {
         val firebase: FirebaseDatabase = FirebaseDatabase.getInstance()
         val db: DatabaseReference = firebase.getReference("Careers").child(name).child("Information");
         db.addValueEventListener(object : ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (child in snapshot.children) {
+                    Log.i("apiData" , child.value.toString())
                    if(child.key == "WDTD"){
                        binding.WDTDYoutubePlayerInformation.addYouTubePlayerListener(object:AbstractYouTubePlayerListener(){
                            override fun onReady(youTubePlayer: YouTubePlayer) {

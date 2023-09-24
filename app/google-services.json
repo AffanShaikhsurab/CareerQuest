@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "586358000341",
-    "project_id": "needfit-d41bc",
-    "storage_bucket": "needfit-d41bc.appspot.com"
+    "project_number": "433645905430",
+    "project_id": "careerquest-18024",
+    "storage_bucket": "careerquest-18024.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:586358000341:android:f9c7c4ee20c5391a94705c",
+        "mobilesdk_app_id": "1:433645905430:android:f5ba6a1ecc0f796c837737",
         "android_client_info": {
           "package_name": "com.affanshaikhsurab.myapplication"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "586358000341-bpp532n9bpdgd3issp5ei6usl7ql5rhb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDZ2Qa6wyF8GqRU82MMr6XDB2U-fELYD10"
+          "current_key": "AIzaSyCeus2Jw6itg-U2HpLr2B088B3hXd-1dPk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "586358000341-bpp532n9bpdgd3issp5ei6usl7ql5rhb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

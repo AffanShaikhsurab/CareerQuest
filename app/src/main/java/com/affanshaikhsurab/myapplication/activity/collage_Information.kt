@@ -2,6 +2,7 @@ package com.affanshaikhsurab.myapplication.activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -26,15 +27,18 @@ class collage_Information : AppCompatActivity() {
         supportActionBar?.setTitle(intent.getStringExtra("Name").toString())
         binding = ActivityCollageInformationBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        fetchingData(name).run { }
-        fetchingImages(name).run { }
+        fetchingData(name)
+        fetchingImages(name)
         fetchingCollage(name).run { }
         fetchingReviews(name).run { }
     }
 
     fun fetchingData(course: String) {
         val firebase: FirebaseDatabase = FirebaseDatabase.getInstance()
+
         val db: DatabaseReference = firebase.getReference(course).child("Information");
+        Log.i("apiDData" , db.toString())
+
         db.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (datasnapshot in snapshot.children) {
