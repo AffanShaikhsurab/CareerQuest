@@ -21,6 +21,8 @@ class collage_Information : AppCompatActivity() {
     private lateinit var binding: ActivityCollageInformationBinding
     var Imagelist: ArrayList<String> = ArrayList()
     var Companieslist: ArrayList<String> = ArrayList()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var name: String = intent.getStringExtra("Label").toString()
